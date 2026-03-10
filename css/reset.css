@@ -1,0 +1,76 @@
+/* Reset CSS baseado no Reset do Andy Bell */
+
+/* Garante que todos os elementos usem box-sizing: border-box para facilitar o cálculo de tamanhos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove as margens padrões de vários elementos comuns */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove estilos de lista em elementos que têm um papel (role) de lista */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Permite rolagem suave se o usuário não tiver restrições de movimento */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Define padrões básicos para o corpo da página */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Garante que links sem classes não tenham estilos de sublinhado estranhos em alguns navegadores */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Faz com que as imagens sejam flexíveis por padrão e evita que transbordem */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Faz com que formulários herdem as fontes do elemento pai */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animações para pessoas que preferem movimento reduzido por questões de saúde ou acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
