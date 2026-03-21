@@ -49,6 +49,8 @@ a {
 
 ul, ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Faz com que as imagens sejam flexíveis por padrão e evita que transbordem */
