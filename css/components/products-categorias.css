@@ -9,10 +9,11 @@
 
 .category-card {
     position: relative;
-    width: 317px;
+    width: 317.5px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
+    gap: 10px;
 }
 
 .overlay {

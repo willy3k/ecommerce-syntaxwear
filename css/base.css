@@ -12,12 +12,13 @@ main {
 
 .btn {
     font-size: 1.25rem;
-    width: 161px;
+    line-height: 28px;
+    width: 141px;
     height: 48px;
     border-radius: 25px;
     text-decoration: none;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 20px;
 
     transition: background-color 0.3s, border 0.3s;
@@ -26,8 +27,8 @@ main {
 .btn-outiline {
     background-color: transparent;
     border: 2px solid #ffffff;
-    line-height: 23px;
-
+    line-height: 28px;
+    font-size: 20px;
 }
 
 .btn-filled {
