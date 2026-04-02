@@ -96,3 +96,29 @@
     text-align: center;
     padding: 1.25rem 0; /* 20px 0 */
 }
+
+@media (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 80px;
+        padding: 2rem 1rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-nav ul {
+        gap: 1.3rem;
+    }
+
+    .footer-social ul {
+        gap: 1rem;
+    }
+
+    .footer-copy {
+        max-width: 90%;
+        font-size: 1rem;
+        padding: 1.5rem 0 1.5rem;
+    }
+}
